@@ -285,9 +285,9 @@ class OnlineLDA:
         # Do an E step to update gamma, phi | lambda for this
         # mini-batch. This also returns the information about phi that
         # we need to update lambda.
-        (gamma, sstats) = self.do_e_step(docs)
+        (gamma, sstats) = self.do_e_step_docs(docs)
         # Estimate held-out likelihood for current values of lambda.
-        bound = self.approx_bound(docs, gamma)
+        bound = self.approx_bound_docs(docs, gamma)
         # Update lambda based on documents.
         self._lambda = self._lambda * (1-rhot) + \
             rhot * (self._eta + self._D * sstats / len(docs))
