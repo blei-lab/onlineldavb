@@ -36,7 +36,7 @@ def get_random_wikipedia_article():
             f = urllib2.urlopen(req)
             while not articletitle:
                 line = f.readline()
-                result = re.search(r'title="Edit this page" href="/w/index.php\?title=(.*)\&amp;action=edit" /\>', line)
+                result = re.search(r'title="Edit this page" href="/w/index.php\?title=(.*)\&amp;action=edit"/\>', line)
                 if (result):
                     articletitle = result.group(1)
                     break
