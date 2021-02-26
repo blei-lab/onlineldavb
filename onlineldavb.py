@@ -150,7 +150,7 @@ class OnlineLDA:
             expElogthetad = expElogtheta[d, :]
             expElogbetad = self._expElogbeta[:, ids]
             # The optimal phi_{dwk} is proportional to 
-            # expElogthetad_k * expElogbetad_w. phinorm is the normalizer.
+            # expElogthetad_k * expElogbetad_kw. phinorm is the normalizer.
             phinorm = n.dot(expElogthetad, expElogbetad) + 1e-100
             # Iterate between gamma and phi until convergence
             for it in range(0, 100):
