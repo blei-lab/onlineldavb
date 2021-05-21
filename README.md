@@ -1,4 +1,4 @@
-ONLINE VARIATIONAL BAYES FOR LATENT DIRICHLET ALLOCATION
+[ONLINE VARIATIONAL BAYES FOR LATENT DIRICHLET ALLOCATION](https://papers.neurips.cc/paper/2010/hash/71f6278d140af599e06ad9bf1ba03cb0-Abstract.html)
 
 Matthew D. Hoffman
 mdhoffma@cs.princeton.edu
@@ -23,9 +23,9 @@ USA
 ------------------------------------------------------------------------
 
 This Python code implements the online Variational Bayes (VB)
-algorithm presented in the paper "Online Learning for Latent Dirichlet
-Allocation" by Matthew D. Hoffman, David M. Blei, and Francis Bach,
-to be presented at NIPS 2010.
+algorithm presented in the paper ["Online Learning for Latent Dirichlet
+Allocation"](https://papers.neurips.cc/paper/2010/file/71f6278d140af599e06ad9bf1ba03cb0-Paper.pdf) by Matthew D. Hoffman, David M. Blei, and Francis Bach,
+presented at NeurIPS 2010.
 
 The algorithm uses stochastic optimization to maximize the variational
 objective function for the Latent Dirichlet Allocation (LDA) topic model.
